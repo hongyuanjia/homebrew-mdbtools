@@ -24,15 +24,14 @@ class Mdbtools < Formula
   depends_on "pkgconf" => :build
 
   depends_on "glib"
+  depends_on "flex"
+  depends_on "unixodbc"
+
   depends_on "readline"
 
   on_macos do
     depends_on "gettext"
   end
-
-  depends_on "bison"
-  depends_on "flex"
-  depends_on "unixodbc"
 
   def install
     ENV.deparallelize
