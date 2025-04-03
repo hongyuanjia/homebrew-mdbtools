@@ -2,14 +2,14 @@
 
 ## How do I install these formulae?
 
-`brew install hongyuanjia/mdbtools/<formula>`
+`brew install hongyuanjia/mdbtools-odbc/<formula>`
 
-Or `brew tap hongyuanjia/mdbtools` and then `brew install <formula>`.
+Or `brew tap hongyuanjia/mdbtools-odbc` and then `brew install <formula>`.
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
-tap "hongyuanjia/mdbtools"
+tap "hongyuanjia/mdbtools-odbc"
 brew "<formula>"
 ```
 
