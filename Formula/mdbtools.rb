@@ -6,13 +6,11 @@ class Mdbtools < Formula
   license "GPL-2.0-or-later"
 
   bottle do
-    sha256 cellar: :any,                 arm64_sequoia: "3aab4c13461e0571b3ef4aa822417e0408fd7caad03f0d7d63bda9e20d102f20"
-    sha256 cellar: :any,                 arm64_sonoma:  "c247b94b87f1f09c26953f4b3f923f345ba18a8764d8f5ffc0ca8060e557a5fe"
-    sha256 cellar: :any,                 arm64_ventura: "ece916c2bc386781de20c67cc5e314430a369dc886d362f22039ea56d37771ee"
-    sha256 cellar: :any,                 sonoma:        "49722390bf0230475a1261a0c10d90540b6ff056a07c54b74680eab7276c3a04"
-    sha256 cellar: :any,                 ventura:       "2c2db546223c1b1ddfba20d70303761358fb5bba39362924976ff35d9710ae1e"
-    sha256 cellar: :any_skip_relocation, arm64_linux:   "1d367189a2aadd23bfe3dcc0aa062cb780d2ac8a6fa4d51a8b30b7f6d9486fa3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0e2ca3b97c784e7ce3e9d42e0bf58e15816b94944f2686c41d6ec698fc50ca0f"
+    root_url "https://github.com/hongyuanjia/homebrew-mdbtools/releases/download/mdbtools-1.0.1"
+    rebuild 1
+    sha256 cellar: :any,                 arm64_sequoia: "8fdffad4ae1dbae8803e5fca4633307ad73c504abe8d80ed1c2b77c103c7e9a7"
+    sha256 cellar: :any,                 ventura:       "3145493958ef8e2e5c65b32317f0dc754985adae6199e8762cee14f728e7204f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d1cf1d066dae1f7c6f617e8bcc05c1a1571e257356b313050b4e1fd3a5f95d33"
   end
 
   depends_on "autoconf" => :build
