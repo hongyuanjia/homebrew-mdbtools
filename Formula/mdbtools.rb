@@ -23,11 +23,10 @@ class Mdbtools < Formula
   depends_on "libtool" => :build
   depends_on "pkgconf" => :build
 
-  depends_on "glib"
   depends_on "flex"
-  depends_on "unixodbc"
-
+  depends_on "glib"
   depends_on "readline"
+  depends_on "unixodbc"
 
   on_macos do
     depends_on "gettext"
